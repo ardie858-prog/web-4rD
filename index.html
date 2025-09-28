@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Kuota Utama XL</title>
+    <style>
+        /* Mengatur font dan latar belakang dasar */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* Kontainer utama untuk mengatur lebar dan posisi */
+        .container {
+            width: 100%;
+            max-width: 700px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden; /* Agar border-radius terlihat di semua elemen anak */
+        }
+        
+        /* Header utama */
+        .header {
+            background-color: #0073e6; /* Warna biru khas XL */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 1.8em;
+        }
+
+        /* Konten utama */
+        .content {
+            padding: 20px 25px;
+        }
+
+        /* Setiap kartu paket kuota */
+        .plan-card {
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        /* Judul paket (misal: AKRAB MINI) dan harga */
+        .plan-card h2 {
+            margin: 0 0 15px 0;
+            color: #003366; /* Warna biru lebih gelap */
+            font-size: 1.4em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #f0f2f5;
+            padding-bottom: 10px;
+        }
+        
+        .plan-card .price {
+            color: #28a745; /* Warna hijau untuk harga */
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+
+        /* Daftar area kuota */
+        .plan-card ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .plan-card li {
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /* Keterangan khusus seperti "MADURA" */
+        .note {
+            background-color: #ffc107;
+            color: #333;
+            padding: 3px 8px;
+            border-radius: 5px;
+            font-size: 0.8em;
+            font-weight: 600;
+            margin-left: 10px;
+        }
+        
+        /* Notifikasi Stok Terbatas */
+        .alert {
+            background-color: #dc3545; /* Warna merah */
+            color: white;
+            text-align: center;
+            padding: 12px;
+            margin: 20px 0;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        /* Bagian Info Pembayaran */
+        .payment-info {
+            background-color: #e9ecef;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .payment-info h3 {
+            margin-top: 0;
+            text-align: center;
+            color: #003366;
+        }
+        
+        .payment-info p {
+            margin: 8px 0;
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        
+        .payment-info strong {
+            color: #000;
+        }
+
+        /* Tombol WhatsApp */
+        .whatsapp-button {
+            display: block;
+            background-color: #25D366; /* Warna hijau WhatsApp */
+            color: white;
+            text-align: center;
+            padding: 15px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-top: 25px;
+            transition: background-color 0.3s ease;
+        }
+
+        .whatsapp-button:hover {
+            background-color: #128C7E;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>FULL KUOTA UTAMA XL 24 JAM</h1>
+        </div>
+        <div class="plan-card">
+            <h2>AKRAB MINI <span class="price">Rp 52.000</span></h2>
+            <ul>
+                <li>Area 1: <strong>19GB</strong></li>
+                <li>Area 2: <strong>21GB</strong><span class="note">MADURA</span></li>
+                <li>Area 3: <strong>26GB</strong></li>
+                <li>Area 4: <strong>36GB</strong></li>
+            </ul>
+        </div>
+
+        <div class="plan-card">
+            <h2>AKRAB LITE <span class="price">Rp 63.000</span></h2>
+            <ul>
+                <li>Area 1: <strong>31GB</strong></li>
+                <li>Area 2: <strong>32GB</strong><span class="note">MADURA</span></li>
+                <li>Area 3: <strong>38GB</strong></li>
+                <li>Area 4: <strong>48GB</strong></li>
+            </ul>
+        </div>
+
+        <div class="plan-card">
+            <h2>AKRAB BIG LITE <span class="price">Rp 70.000</span></h2>
+            <ul>
+                <li>Area 1: <strong>38GB</strong></li>
+                <li>Area 2: <strong>40GB</strong><span class="note">MADURA</span></li>
+                <li>Area 3: <strong>45GB</strong></li>
+                <li>Area 4: <strong>55GB</strong></li>
+            </ul>
+        </div>
+        
+        <div class="plan-card">
+            <h2>AKRAB BIG V2 <span class="price">Rp 85.000</span></h2>
+            <ul>
+                <li>Area 1: <strong>63GB</strong></li>
+                <li>Area 2: <strong>65GB</strong><span class="note">MADURA</span></li>
+                <li>Area 3: <strong>70GB</strong></li>
+                <li>Area 4: <strong>80GB</strong></li>
+            </ul>
+        </div>
+
+        <div class="plan-card">
+            <h2>AKRAB JUMBO <span class="price">Rp 95.000</span></h2>
+            <ul>
+                <li>Area 1: <strong>76GB</strong></li>
+                <li>Area 2: <strong>78GB</strong><span class="note">MADURA</span></li>
+                <li>Area 3: <strong>83GB</strong></li>
+                <li>Area 4: <strong>93GB</strong></li>
+            </ul>
+        </div>
+
+        <div class="plan-card">
+            <h2>AKRAB JUMBO V2 <span class="price">Rp 105.000</span></h2>
+            <ul>
+                <li>Area 1: <strong>88GB</strong></li>
+                <li>Area 2: <strong>90GB</strong><span class="note">MADURA</span></li>
+                <li>Area 3: <strong>98GB</strong></li>
+                <li>Area 4: <strong>105GB</strong></li>
+            </ul>
+            </div>
+            
+            <div class="alert">
+                STOK TERBATAS!!!
+            </div>
+
+            <div class="payment-info">
+                <h3>Info Pembayaran Online</h3>
+                <p>A/N: <strong>SUNARDI</strong></p>
+                <p>No. Rekening BRI: <strong>610201027960536</strong></p>
+                <p>DANA: <strong>087859486243</strong></p>
+            </div>
+            
+            <a href="https://wa.me/6283115045560" class="whatsapp-button" target="_blank">
+                Pesan Sekarang via WhatsApp
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
